@@ -29,6 +29,7 @@ struct LandmarkRow: View {
 struct LandmarkRow_Previews: PreviewProvider {
     static var previews: some View {
         List {
+            let landmarks = ModelData().landmarks
             LandmarkRow(landmark: landmarks[0])
             LandmarkRow(landmark: landmarks[1])
         }
